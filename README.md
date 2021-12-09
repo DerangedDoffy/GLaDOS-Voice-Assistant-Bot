@@ -18,3 +18,7 @@ Happy Holidays guys!
 * Search 
 * Screenshot
 * Sneeze *you heard that*
+
+## **Credits**
+Voiced by: Ellen McLain
+TTS lines: 15.ai
