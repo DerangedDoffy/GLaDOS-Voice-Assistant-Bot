@@ -19,7 +19,7 @@ Happy Holidays guys!
 * Take screenshot
 * Sneeze *you heard that*
 * Others that aren't as relevant
-* Will soon be able to perform math tasks
+* Will soon be able to perform math tasks and will optimize more etc.
 
 ## **Credits**
 Voiced by: 
