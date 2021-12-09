@@ -10,7 +10,7 @@ Happy Holidays guys!
 * pip install datetime 
 * pip install pyautogui
 
-# **Commands Available**
+## **Commands Available**
 * Saying hello 
 * Asking name
 * Time
