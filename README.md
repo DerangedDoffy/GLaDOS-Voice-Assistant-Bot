@@ -21,4 +21,5 @@ Happy Holidays guys!
 
 ## **Credits**
 Voiced by: Ellen McLain
-TTS lines: 15.ai
+
+15.ai
