@@ -30,8 +30,7 @@ def record_audio(ask=False):
         try:
             voice_data = r.recognize_google(audio)
         except sr.UnknownValueError:
-            time.sleep(60)
-            playsound('D:\Py Projects\Projects\GLaDOS\sound_files\wheately.mp3')
+            pass
         except sr.RequestError:
             playsound('D:\Py Projects\Projects\GLaDOS\sound_files\offline.mp3')
         print(f">>> {voice_data.lower()}")
@@ -65,6 +64,9 @@ def respond(voice_data):
 
     if 'what are you' in voice_data:
         playsound('D:\Py Projects\Projects\GLaDOS\sound_files\glados_name.mp3')
+
+    if "thank" in voice_data:
+        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\you_welcome.mp3')
 
     if 'time' in voice_data:
         t = time.strftime("%I:%M %p")
@@ -107,6 +109,14 @@ def respond(voice_data):
         webbrowser.open(url)
         playsound('D:\Py Projects\Projects\GLaDOS\sound_files\search_results.mp3')
 
+    if 'what was' in voice_data:
+        search_term = voice_data
+        url = "https://google.com/search?q=" + search_term
+        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\_found.mp3')
+        webbrowser.get()
+        webbrowser.open(url)
+        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\search_results.mp3')
+
     if 'how did' in voice_data:
         search_term = voice_data
         url = "https://google.com/search?q=" + search_term
@@ -132,6 +142,22 @@ def respond(voice_data):
         playsound('D:\Py Projects\Projects\GLaDOS\sound_files\search_results.mp3')
 
     if 'how much' in voice_data:
+        search_term = voice_data
+        url = "https://google.com/search?q=" + search_term
+        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\searching.mp3')
+        webbrowser.get()
+        webbrowser.open(url)
+        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\search_results.mp3')
+
+    if 'were the' in voice_data:
+        search_term = voice_data
+        url = "https://google.com/search?q=" + search_term
+        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\searching.mp3')
+        webbrowser.get()
+        webbrowser.open(url)
+        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\search_results.mp3')
+
+    if 'who was the' in voice_data:
         search_term = voice_data
         url = "https://google.com/search?q=" + search_term
         playsound('D:\Py Projects\Projects\GLaDOS\sound_files\searching.mp3')
