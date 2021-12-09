@@ -82,6 +82,7 @@ def respond(voice_data):
         webbrowser.get()
         webbrowser.open(url)
         playsound('D:\Py Projects\Projects\GLaDOS\sound_files\_found.mp3')
+
     if 'what does' in voice_data:
         search_term = voice_data
         url = "https://google.com/search?q=" + search_term
@@ -89,6 +90,7 @@ def respond(voice_data):
         webbrowser.get()
         webbrowser.open(url)
         playsound('D:\Py Projects\Projects\GLaDOS\sound_files\search_results.mp3')
+
     if 'who is' in voice_data:
         search_term = voice_data
         url = "https://google.com/search?q=" + search_term
@@ -96,6 +98,7 @@ def respond(voice_data):
         webbrowser.get()
         webbrowser.open(url)
         playsound('D:\Py Projects\Projects\GLaDOS\sound_files\search_results.mp3')
+
     if 'what is' in voice_data:
         search_term = voice_data
         url = "https://google.com/search?q=" + search_term
@@ -103,6 +106,7 @@ def respond(voice_data):
         webbrowser.get()
         webbrowser.open(url)
         playsound('D:\Py Projects\Projects\GLaDOS\sound_files\search_results.mp3')
+
     if 'how did' in voice_data:
         search_term = voice_data
         url = "https://google.com/search?q=" + search_term
@@ -110,6 +114,7 @@ def respond(voice_data):
         webbrowser.get()
         webbrowser.open(url)
         playsound('D:\Py Projects\Projects\GLaDOS\sound_files\search_results.mp3')
+
     if 'why did' in voice_data:
         search_term = voice_data
         url = "https://google.com/search?q=" + search_term
@@ -117,6 +122,22 @@ def respond(voice_data):
         webbrowser.get()
         webbrowser.open(url)
         playsound('D:\Py Projects\Projects\GLaDOS\sound_files\_found.mp3')
+
+    if 'how many' in voice_data:
+        search_term = voice_data
+        url = "https://google.com/search?q=" + search_term
+        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\searching.mp3')
+        webbrowser.get()
+        webbrowser.open(url)
+        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\search_results.mp3')
+
+    if 'how much' in voice_data:
+        search_term = voice_data
+        url = "https://google.com/search?q=" + search_term
+        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\searching.mp3')
+        webbrowser.get()
+        webbrowser.open(url)
+        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\search_results.mp3')
 
     if 'potato' in voice_data:
         playsound('D:\Py Projects\Projects\GLaDOS\sound_files\potato.mp3')
@@ -155,6 +176,18 @@ def respond(voice_data):
         playsound('D:\Py Projects\Projects\GLaDOS\sound_files\sneeze.mp3')
 
     if 'plus' in voice_data:
+        #playsound('D:\Py Projects\Projects\GLaDOS\sound_files\easy_math.mp3')
+        pass
+
+    if 'minus' in voice_data:
+        #playsound('D:\Py Projects\Projects\GLaDOS\sound_files\easy_math.mp3')
+        pass
+
+    if 'times' in voice_data:
+        #playsound('D:\Py Projects\Projects\GLaDOS\sound_files\easy_math.mp3')
+        pass
+
+    if 'divided' in voice_data:
         #playsound('D:\Py Projects\Projects\GLaDOS\sound_files\easy_math.mp3')
         pass
 
