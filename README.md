@@ -9,7 +9,7 @@ Happy Holidays guys!
 * pip install gTTS
 * pip install datetime 
 * pip install pyautogui
-* 
+
 # **Commands Available**
 * Saying hello 
 * Asking name
@@ -17,4 +17,4 @@ Happy Holidays guys!
 * Date
 * Search 
 * Screenshot
-* Sneeze (you heard that)
+* Sneeze *you heard that*
