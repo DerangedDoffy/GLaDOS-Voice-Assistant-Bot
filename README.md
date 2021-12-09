@@ -3,7 +3,7 @@ Happy Holidays guys!
 
 # GLaDOS Voice Assistant Bot 
 
-**Install**
+## **Install**
 * pip install pyaudio
 * pip install playsound 
 * pip install gTTS
