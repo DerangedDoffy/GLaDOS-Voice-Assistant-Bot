@@ -11,13 +11,15 @@ Happy Holidays guys!
 * pip install pyautogui
 
 ## **Commands Available**
-* Saying hello 
-* Asking name
-* Time
-* Date
-* Search 
-* Screenshot
+* Say hello 
+* Ask for name
+* Ask for time
+* Ask for date
+* Search for anything
+* Take screenshot
 * Sneeze *you heard that*
+* Others that aren't as relevant
+* Will soon be able to perform math tasks
 
 ## **Credits**
 Voiced by: 
