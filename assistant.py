@@ -62,9 +62,6 @@ def respond(voice_data):
     if 'who are you' in voice_data:
         playsound('D:\Py Projects\Projects\GLaDOS\sound_files\glados_name.mp3')
 
-    if 'what are you' in voice_data:
-        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\glados_name.mp3')
-
     if "thank" in voice_data:
         playsound('D:\Py Projects\Projects\GLaDOS\sound_files\you_welcome.mp3')
 
@@ -84,86 +81,6 @@ def respond(voice_data):
         webbrowser.get()
         webbrowser.open(url)
         playsound('D:\Py Projects\Projects\GLaDOS\sound_files\_found.mp3')
-
-    if 'what does' in voice_data:
-        search_term = voice_data
-        url = "https://google.com/search?q=" + search_term
-        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\searching.mp3')
-        webbrowser.get()
-        webbrowser.open(url)
-        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\search_results.mp3')
-
-    if 'who is' in voice_data:
-        search_term = voice_data
-        url = "https://google.com/search?q=" + search_term
-        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\searching.mp3')
-        webbrowser.get()
-        webbrowser.open(url)
-        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\search_results.mp3')
-
-    if 'what is' in voice_data:
-        search_term = voice_data
-        url = "https://google.com/search?q=" + search_term
-        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\_found.mp3')
-        webbrowser.get()
-        webbrowser.open(url)
-        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\search_results.mp3')
-
-    if 'what was' in voice_data:
-        search_term = voice_data
-        url = "https://google.com/search?q=" + search_term
-        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\_found.mp3')
-        webbrowser.get()
-        webbrowser.open(url)
-        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\search_results.mp3')
-
-    if 'how did' in voice_data:
-        search_term = voice_data
-        url = "https://google.com/search?q=" + search_term
-        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\searching.mp3')
-        webbrowser.get()
-        webbrowser.open(url)
-        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\search_results.mp3')
-
-    if 'why did' in voice_data:
-        search_term = voice_data
-        url = "https://google.com/search?q=" + search_term
-        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\searching.mp3')
-        webbrowser.get()
-        webbrowser.open(url)
-        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\_found.mp3')
-
-    if 'how many' in voice_data:
-        search_term = voice_data
-        url = "https://google.com/search?q=" + search_term
-        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\searching.mp3')
-        webbrowser.get()
-        webbrowser.open(url)
-        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\search_results.mp3')
-
-    if 'how much' in voice_data:
-        search_term = voice_data
-        url = "https://google.com/search?q=" + search_term
-        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\searching.mp3')
-        webbrowser.get()
-        webbrowser.open(url)
-        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\search_results.mp3')
-
-    if 'were the' in voice_data:
-        search_term = voice_data
-        url = "https://google.com/search?q=" + search_term
-        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\searching.mp3')
-        webbrowser.get()
-        webbrowser.open(url)
-        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\search_results.mp3')
-
-    if 'who was the' in voice_data:
-        search_term = voice_data
-        url = "https://google.com/search?q=" + search_term
-        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\searching.mp3')
-        webbrowser.get()
-        webbrowser.open(url)
-        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\search_results.mp3')
 
     if 'potato' in voice_data:
         playsound('D:\Py Projects\Projects\GLaDOS\sound_files\potato.mp3')
