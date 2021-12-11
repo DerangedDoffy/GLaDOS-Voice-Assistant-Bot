@@ -9,6 +9,7 @@ Happy Holidays guys!
 * pip install gTTS
 * pip install datetime 
 * pip install pyautogui
+* pip install wheel
 
 ## **Commands Available**
 * Say hello 
