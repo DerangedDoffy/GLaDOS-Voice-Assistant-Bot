@@ -12,15 +12,19 @@ Happy Holidays guys!
 * pip install wheel
 
 ## **Commands Available**
-* Say hello 
-* Ask for name
-* Ask for time
-* Ask for date
-* Search for anything
-* Take screenshot
+* Hello 
+* Name
+* Time
+* Date
+* Search 
+* Screenshot
 * Sneeze *you heard that*
-* Others that aren't as relevant
-* Will soon be able to perform math tasks and will be optimized more etc.
+* Reference Joke
+* Open Apps
+* Wish Merry Xmas
+* Goodbye
+* Exit
+* Small voicelines etc
 
 ## **Credits**
 Voiced by: 
