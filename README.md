@@ -10,6 +10,7 @@ Happy Holidays guys!
 * pip install datetime 
 * pip install pyautogui
 * pip install wheel 
+
 **If you're having trouble installing Pyaudio, go to:https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio and install the .whl file**
 
 ## **Commands Available**
