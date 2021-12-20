@@ -11,7 +11,7 @@ Happy Holidays guys!
 * pip install pyautogui
 * pip install wheel 
 
-**If you're having trouble installing Pyaudio, go to:https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio and install the .whl file**
+**Go to: https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio if you have trouble installing Pyaudio & install .whl**
 
 ## **Commands Available**
 * Hello 
