@@ -1,6 +1,6 @@
 # CREDIT for GLaDOS voices goes to 15.ai & Ellen McLain
 
-import speech_recognition as sr
+#import speech_recognition as sr
 from playsound import playsound
 import webbrowser
 from gtts import gTTS
@@ -12,7 +12,9 @@ from datetime import datetime
 import pyautogui
 import sys
 
-playsound('D:\Py Projects\Projects\GLaDOS\sound_files\intro.mp3')
+audio_path = os.path.join(os.path.dirname(__file__), 'audio')
+
+playsound(os.path.join(audio_path, 'intro.mp3')
 r = sr.Recognizer()
 r.energy_threshold = 4000
 
@@ -30,7 +32,7 @@ def record_audio(ask=False):
         except sr.UnknownValueError:
             pass
         except sr.RequestError:
-            playsound('D:\Py Projects\Projects\GLaDOS\sound_files\offline.mp3')
+            playsound(os.path.join(audio_path, 'offline.mp3')
         print(f">>> {voice_data.lower()}")
         return voice_data.lower()
     
@@ -48,22 +50,22 @@ def glados_speak(audio_string):
 def respond(voice_data):
 
     if 'hi' in voice_data:
-        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\hello.mp3')
+        playsound(os.path.join(audio_path, 'hello.mp3')
 
     elif 'hello' in voice_data:
-        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\hello.mp3')
+        playsound(os.path.join(audio_path, 'hello.mp3')
 
     elif 'name' in voice_data:
-        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\glados_name.mp3')
+        playsound(os.path.join(audio_path, 'glados_name.mp3')
 
     elif 'who are you' in voice_data:
-        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\glados_name.mp3')
+        playsound(os.path.join(audio_path, 'glados_name.mp3')
 
     elif "thank you" in voice_data:
-        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\you_welcome.mp3')
+        playsound(os.path.join(audio_path, 'you_welcome.mp3')
 
     elif "thanks" in voice_data:
-        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\you_welcome.mp3')
+        playsound(os.path.join(audio_path, 'you_welcome.mp3')
 
     elif 'time' in voice_data:
         t = time.strftime("%I:%M %p")
@@ -77,56 +79,56 @@ def respond(voice_data):
     elif 'search for' in voice_data:
         search_term = voice_data.split("search for")[-1]
         url = "https://google.com/search?q=" + search_term
-        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\searching.mp3')
+        playsound(os.path.join(audio_path, 'searching.mp3')
         webbrowser.get()
         webbrowser.open(url)
-        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\_found.mp3')
+        playsound(os.path.join(audio_path, '_found.mp3')
 
     elif 'potato' in voice_data:
-        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\potato.mp3')
+        playsound(os.path.join(audio_path, 'potato.mp3')
 
     elif 'oh' in voice_data:
-        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\dead.mp3')
+        playsound(os.path.join(audio_path, 'dead.mp3')
 
     elif 'screenshot' in voice_data:
         rand = str(random.randint(1, 1000))
         myScreenshot = pyautogui.screenshot(f'{rand}.png')
-        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\screenshot_taken.mp3')
+        playsound(os.path.join(audio_path, 'screenshot_taken.mp3')
 
     elif 'sneeze' in voice_data:
-        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\sneeze.mp3')
+        playsound(os.path.join(audio_path, 'sneeze.mp3')
 
     elif 'tell me something funny' in voice_data:
-        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\_adopted.mp3')
+        playsound(os.path.join(audio_path, '_adopted.mp3')
 
     elif 'google' in voice_data:
         os.startfile('C:\\Users\\Public\\Desktop\\Google Chrome.lnk')
-        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\program.mp3')
+        playsound(os.path.join(audio_path, 'program.mp3')
 
     elif 'battlefield' in voice_data:
         os.startfile('C:\\Users\Matth\\OneDrive\\Desktop\\Battlefield™ 2042.url')
-        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\program.mp3')
+        playsound(os.path.join(audio_path, 'program.mp3')
 
     elif 'steam' in voice_data:
         os.startfile('C:\\Users\\Public\Desktop\\Steam.lnk')
-        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\program.mp3')
+        playsound(os.path.join(audio_path, 'program.mp3')
 
     elif 'rust' in voice_data:
         os.startfile("C:\\Users\\Matth\\OneDrive\\Desktop\\Rust.url")
-        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\program.mp3')
+        playsound(os.path.join(audio_path, 'program.mp3')
         
     elif 'christmas' in voice_data:
-        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\christmas.mp3')
+        playsound(os.path.join(audio_path, 'christmas.mp3')
 
     elif 'holidays' in voice_data:
-        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\holidays.mp3')
+        playsound(os.path.join(audio_path, 'holidays.mp3')
 
     elif 'bye' in voice_data:
-        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\Bye.mp3')
+        playsound(os.path.join(audio_path, 'Bye.mp3')
 
     else:
         if 'exit' in voice_data:
-            playsound('D:\Py Projects\Projects\GLaDOS\sound_files\exiting.mp3')
+            playsound(os.path.join(audio_path, 'exiting.mp3')
             sys.exit()
             
 while True:
