@@ -4,16 +4,12 @@ Happy Holidays guys!
 # GLaDOS Voice Assistant Bot 
 
 ## **Install**
-```bash
-pip install poetry
-
-poetry install
-
-poetry shell
-
-python assistant.py
-```
-
+* pip install pyaudio
+* pip install playsound 
+* pip install gTTS
+* pip install datetime 
+* pip install pyautogui
+* pip install wheel 
 * **You will also have to change file paths as we have different folders**
 
 **Go to: https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio OR
