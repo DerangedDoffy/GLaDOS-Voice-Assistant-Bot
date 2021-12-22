@@ -13,7 +13,6 @@ import pyautogui
 import sys
 
 playsound('D:\Py Projects\Projects\GLaDOS\sound_files\intro.mp3')
-
 r = sr.Recognizer()
 r.energy_threshold = 4000
 
@@ -45,7 +44,7 @@ def glados_speak(audio_string):
     print(audio_string)
     os.remove(audio_file)
 
-
+    
 def respond(voice_data):
 
     if 'hi' in voice_data:
@@ -102,16 +101,20 @@ def respond(voice_data):
 
     elif 'google' in voice_data:
         os.startfile('C:\\Users\\Public\\Desktop\\Google Chrome.lnk')
+        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\program.mp3')
 
     elif 'battlefield' in voice_data:
         os.startfile('C:\\Users\Matth\\OneDrive\\Desktop\\Battlefield™ 2042.url')
+        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\program.mp3')
 
     elif 'steam' in voice_data:
         os.startfile('C:\\Users\\Public\Desktop\\Steam.lnk')
+        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\program.mp3')
 
     elif 'rust' in voice_data:
         os.startfile("C:\\Users\\Matth\\OneDrive\\Desktop\\Rust.url")
-
+        playsound('D:\Py Projects\Projects\GLaDOS\sound_files\program.mp3')
+        
     elif 'christmas' in voice_data:
         playsound('D:\Py Projects\Projects\GLaDOS\sound_files\christmas.mp3')
 
@@ -125,7 +128,7 @@ def respond(voice_data):
         if 'exit' in voice_data:
             playsound('D:\Py Projects\Projects\GLaDOS\sound_files\exiting.mp3')
             sys.exit()
-
+            
 while True:
     voice_data = record_audio()
     respond(voice_data)
