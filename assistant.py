@@ -1,6 +1,6 @@
 # CREDIT for GLaDOS voices goes to 15.ai & Ellen McLain
 
-#import speech_recognition as sr
+import speech_recognition as sr
 from playsound import playsound
 import webbrowser
 from gtts import gTTS
