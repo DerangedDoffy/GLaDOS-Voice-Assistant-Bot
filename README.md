@@ -10,7 +10,7 @@ Happy Holidays guys!
 * pip install datetime 
 * pip install pyautogui
 * pip install wheel 
-* **You will also have to change file paths as we have different drives**
+* **You will also have to change file paths as we have different folders**
 
 **Go to: https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio OR
 https://stackoverflow.com/questions/61348555/error-pyaudio-0-2-11-cp38-cp38-win-amd64-whl-is-not-a-supported-wheel-on-this-p/70453656#70453656
