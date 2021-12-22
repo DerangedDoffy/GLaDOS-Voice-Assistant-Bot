@@ -10,7 +10,7 @@ Happy Holidays guys!
 * pip install datetime 
 * pip install pyautogui
 * pip install wheel 
-* 
+
 * **You will also have to change file paths as we have different folders**
 
 **Go to: https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio OR
