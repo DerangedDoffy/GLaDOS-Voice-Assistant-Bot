@@ -11,8 +11,9 @@ Happy Holidays guys!
 * pip install pyautogui
 * pip install wheel 
 
-**Go to: https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio if you have trouble installing Pyaudio & install .whl
-or go to: https://stackoverflow.com/questions/61348555/error-pyaudio-0-2-11-cp38-cp38-win-amd64-whl-is-not-a-supported-wheel-on-this-p/70453656#70453656**
+**Go to: https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio OR
+https://stackoverflow.com/questions/61348555/error-pyaudio-0-2-11-cp38-cp38-win-amd64-whl-is-not-a-supported-wheel-on-this-p/70453656#70453656
+if you are having trouble installing pyaudio**
 
 ## **Commands Available**
 * Hello 
