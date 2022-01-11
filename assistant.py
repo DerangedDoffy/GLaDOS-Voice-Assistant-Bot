@@ -105,8 +105,7 @@ def respond(voice_data):
         playsound('D:\Py Projects\Projects\GLaDOS\sound_files\program.mp3')
 
     elif 'battlefield' in voice_data:
-        os.startfile(
-            'C:\\Users\Matth\\OneDrive\\Desktop\\Battlefield™ 2042.url')
+        os.startfile('C:\\Users\Matth\\OneDrive\\Desktop\\Battlefield™ 2042.url')
         playsound('D:\Py Projects\Projects\GLaDOS\sound_files\program.mp3')
 
     elif 'steam' in voice_data:
